@@ -1,0 +1,18 @@
+/*======================================
+Theme Name: Divi-Child
+Theme URI: https://divicake.com/
+Description: Divi Child Theme
+Version: 1.0
+Author: SignaMarketing
+Author URI: https://www.signamarketing.com
+Template: Divi
+======================================*/
+h1,h2,h3,h4,h5{font-family: 'Pathway Gothic One', sans-serif;}
+header .bottom-header {
+    background-color: #D0112B;
+}
+.et_header_style_left #et-top-navigation nav > ul > li > a, .et_header_style_split #et-top-navigation nav > ul > li > a{
+    color:#fff; font-family: 'Pathway Gothic One', sans-serif;
+}
+/* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
+
