@@ -8,11 +8,14 @@ Author URI: https://www.signamarketing.com
 Template: Divi
 ======================================*/
 h1,h2,h3,h4,h5{font-family: 'Pathway Gothic One', sans-serif;}
-header .bottom-header {
+header#main-header {
     background-color: #D0112B;
 }
 .et_header_style_left #et-top-navigation nav > ul > li > a, .et_header_style_split #et-top-navigation nav > ul > li > a{
-    color:#fff; font-family: 'Pathway Gothic One', sans-serif;
+    color:#fff; font-family: 'Pathway Gothic One', sans-serif; font-size: 20px;text-transform: uppercase;
+}
+#top-menu-nav > ul > li > a:hover, #et-secondary-menu > ul > li > a:hover, #et-info-email:hover, .et-social-icons a:hover{
+    opacity:1; text-decoration: underline;
 }
 /* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
 
