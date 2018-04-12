@@ -11,11 +11,65 @@ h1,h2,h3,h4,h5{font-family: 'Pathway Gothic One', sans-serif;}
 header#main-header {
     background-color: #D0112B;
 }
-.et_header_style_left #et-top-navigation nav > ul > li > a, .et_header_style_split #et-top-navigation nav > ul > li > a{
-    color:#fff; font-family: 'Pathway Gothic One', sans-serif; font-size: 20px;text-transform: uppercase;
+.et_header_style_split #et-top-navigation {
+    padding-top:0px;
+}
+.et_header_style_left #et-top-navigation nav > ul > li > a, .et_header_style_split #et-top-navigation nav > ul > li > a {
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 0px !important;
+    font-weight:400;
+}
+.et_header_style_left #et-top-navigation nav > ul > li > a:hover, .et_header_style_split #et-top-navigation nav > ul > li > a:hover {
+    color: #000;
 }
 #top-menu-nav > ul > li > a:hover, #et-secondary-menu > ul > li > a:hover, #et-info-email:hover, .et-social-icons a:hover{
     opacity:1; text-decoration: underline;
+}
+#et_top_search span#et_search_icon {
+    color: #fff;
+}
+.et_search_outer ::placeholder {
+    color: #fff;
+}
+.et_search_outer input.et-search-field {
+    color: #fff;
+}
+.et_search_outer span.et_close_search_field {
+    color: #fff;
+}
+
+.et_pb_post h2 a:hover, .et_pb_portfolio_item h3 a:hover {
+    text-decoration: underline;
+}
+#top-menu-nav #top-menu li {
+    display: inline-block;
+    padding-right: 22px;
+    font-size: 14px;
+    padding: 33px 15px;
+    height: auto;
+    line-height: 1;
+    color:#fff;
+}
+#top-menu-nav #top-menu li:hover {
+    background-color: #fff;
+    color: #000;
+}
+#top-menu-nav #top-menu li.centered-inline-logo-wrap {
+    width: 207px !important;
+    margin: 10px 15px;
+    background: none;
+    padding: 5px;
+}
+#top-menu li:hover a {
+    color: #000;
+    text-decoration:underline;
+}
+
+#top-menu a {
+    color: #fff;
 }
 /* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
 
