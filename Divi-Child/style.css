@@ -11,6 +11,9 @@ h1,h2,h3,h4,h5{font-family: 'Pathway Gothic One', sans-serif;}
 header#main-header {
     background-color: #D0112B;
 }
+h4.widgettitle {
+    font-size: 28px;
+}
 .et_header_style_split #et-top-navigation {
     padding-top:0px;
 }
@@ -70,6 +73,31 @@ header#main-header {
 
 #top-menu a {
     color: #fff;
+}
+#footer-widgets .et_pb_widget.widget_categories li a:hover {
+    text-decoration: underline !important;
+}
+#footer-widgets .footer-widget li {
+    position: relative;
+    padding-left: 0px;
+}
+#footer-widgets .footer-widget li:before {content:none;}
+#social-media li {
+    display: inline-block;
+    padding-right: 10px;
+    margin-bottom: 2px;
+}
+#social-media li a i {
+    width: 30px;
+    font-size: 40px;
+}
+.et_pb_widget li a:hover{
+    text-decoration:underline;
+    color: #D0112B;
+}
+#top-menu li.current-menu-item{color:#fff;}
+#top-menu li.current-menu-item:hover > a {
+    color: #000;
 }
 /* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
 
