@@ -34,6 +34,40 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="page-container">
+    <div class="container clear-fix">
+    <div class="top-header">
+                        <div class="top-info phone-icon font-smaller" style="color:#939598">
+        Questions? Call us 1-800-397-9378
+    </div>
+                    <div class="top-action">
+ <a href="/service" class="top-hyp font-smaller">Customer service</a>
+<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2f" class="top-hyp font-smaller">Login</a>
+                    </div>
+                </div>
+    <div class="middle-header">
+                    
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/wp-content/uploads/2018/04/logo_wm.png" alt="Logo image">
+                        </a>
+                    </div>
+            
+                                
+                <div class="search">
+                <div class="search-wrapper ui-front" id="middle-header-search">
+                <div id="search-2" class="et_pb_widget widget_search" style="width:100%;">
+                    <form role="search" method="get" id="searchform" class="searchform" action="http://westmusic.signamarketing.net/">
+				    <div>
+					    <label class="screen-reader-text" for="s">Search for:</label>
+					    <input type="text" placeholder="Search Blog Posts..." name="s" id="s">
+					    <input type="submit" id="searchsubmit" value="search">
+				    </div>
+                    </form>
+                </div>
+                </div>
+                </div>
+                <div class="basket"></div>
+                </div></div>
 <?php
 	if ( is_page_template( 'page-template-blank.php' ) ) {
 		return;

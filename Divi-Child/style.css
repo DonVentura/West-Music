@@ -14,7 +14,10 @@ header#main-header {
 h4.widgettitle {
     font-size: 28px;
 }
-.et_header_style_split #et-top-navigation {
+#et-top-navigation {
+width:100%; padding-top:0px !important;
+}
+ .et_header_style_split #et-top-navigation {
     padding-top:0px;
 }
 .et_header_style_left #et-top-navigation nav > ul > li > a, .et_header_style_split #et-top-navigation nav > ul > li > a {
@@ -22,7 +25,6 @@ h4.widgettitle {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
-    padding-bottom: 0px !important;
     font-weight:400;
 }
 .et_header_style_left #et-top-navigation nav > ul > li > a:hover, .et_header_style_split #et-top-navigation nav > ul > li > a:hover {
@@ -47,16 +49,16 @@ h4.widgettitle {
 .et_pb_post h2 a:hover, .et_pb_portfolio_item h3 a:hover {
     text-decoration: underline;
 }
-#top-menu-nav #top-menu li {
-    display: inline-block;
-    padding-right: 22px;
-    font-size: 14px;
-    padding: 33px 15px;
+#top-menu li {padding-right:0px;}
+#top-menu-nav #top-menu li a {
+    font-size: 20px;
+    padding: 20px 15px;
     height: auto;
     line-height: 1;
-    color:#fff;
+    color: #fff;
+    transition:none;
 }
-#top-menu-nav #top-menu li:hover {
+#top-menu-nav #top-menu li a:hover {
     background-color: #fff;
     color: #000;
 }
@@ -95,9 +97,151 @@ h4.widgettitle {
     text-decoration:underline;
     color: #D0112B;
 }
-#top-menu li.current-menu-item{color:#fff;}
+/* #top-menu li.current-menu-item{color:#fff;}
 #top-menu li.current-menu-item:hover > a {
     color: #000;
-}
+} */
 /* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
+.top-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+    z-index: 3;
+}
+.middle-header,.top-header {
+    box-sizing: unset;
+    -webkit-box-sizing: unset;
+}
 
+.middle-header {
+    border-color: #e6e6e6;
+}
+@media (min-width: 1024px){
+    .top-header, .middle-header {
+        padding: 0 4%;
+    }
+}
+
+.middle-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    /* justify-content: space-between; */
+    justify-content:left;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    min-height: 63px;
+    margin: 15px auto 10px;
+    max-width: 1000px;
+    z-index: 2;
+}
+.middle-header .logo {margin-right:40px;}
+.middle-header .search{width:55%;}
+.widget_search input#s, .widget_search input#searchsubmit {
+    height:44px !important;;
+}
+.middle-header .widget_search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+  .middle-header .widget_search input::-moz-placeholder { /* Firefox 19+ */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+  .middle-header .widget_search input:-ms-input-placeholder { /* IE 10+ */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+  .middle-header .widget_search input:-moz-placeholder { /* Firefox 18- */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+.top-info.phone-icon:before {
+    background: url(/wp-content/themes/Divi-Child/images/phone.png);
+    content:'';
+    /* content: '\f095';
+    font-family:fontawesome; */
+    display: inline-block;
+    margin-right: 9px;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
+.font-smaller {
+    font-size: 12px;
+}
+.top-hyp {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    vertical-align: top;
+    padding: 0 15px;
+}
+.top-hyp, .login, .language, .login .hyp, .language .hyp {
+    color: #333;
+}
+.top-hyp+.top-hyp {
+    border-left: 1px solid #e6e6e6;
+}
+#middle-header-search .widget_search input#searchsubmit {
+    background-color: #D0112B;
+    color: transparent;
+    border: none;
+    width: 55px;
+    z-index: 2;
+    background: url(/wp-content/themes/Divi-Child/images/search.png);
+    background-repeat: no-repeat;
+    background-color: #D0112B;
+    background-size: 17px;
+    background-position: center;
+}
+#middle-header-search .widget_search input#searchsubmit:hover{
+    background-color:#939598;
+}
+#top-menu .menu-item-has-children > a:first-child:after, #et-secondary-nav .menu-item-has-children > a:first-child:after{
+    content:'';
+}
+#top-menu-nav #top-menu li ul.sub-menu li a {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    padding-left:7px;
+}
+#top-menu-nav #top-menu li ul.sub-menu li a:before{
+    content: '› ';
+    display: inline;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    line-height: 0;
+}
+#top-menu-nav #top-menu li ul.sub-menu li a:hover{color:#333;background-color:#f7f7f7;opacity:1;}
+#top-menu-nav #top-menu li ul.sub-menu li:hover {background-color:#f7f7f7}
+.mobile_menu_bar:before {
+    color: #fff;
+}

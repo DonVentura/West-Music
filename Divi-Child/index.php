@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('westmusic_custom'); ?>
 
 <div id="main-content">
 	<div class="container">
