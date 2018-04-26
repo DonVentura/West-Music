@@ -45,7 +45,7 @@
 		</div>
 		<div class="mobile-nav-middle">
 			<div class="logo">
-				<a href="/">
+				<a href="http://westmusic.com">
 					<img src="/wp-content/uploads/2018/04/logo_wm.png" alt="Logo image">
 				</a>
 			</div>                 
@@ -68,8 +68,8 @@
         		<span class="login-title">Account</span>
     		</div>
     		<div class="summary">
-        		<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2fall-products%2f" class="hyp">Login</a>
-				<a href="/profile/wishlist" class="hyp" rel="nofollow">Wish list</a>
+        		<a href="http://westmusic.com/profile/" class="hyp">Login</a>
+				<a href="http://westmusic.com/profile/wishlist" class="hyp" rel="nofollow">Wish list</a>
     		</div>
 		</div>
 	</div>
@@ -78,22 +78,22 @@
     <div class="top-header">
 		<div class="top-info phone-icon font-smaller" style="color:#939598">Questions? Call us 1-800-397-9378</div>
         <div class="top-action">
-			<a href="/service" class="top-hyp font-smaller">Customer service</a>
-			<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2f" class="top-hyp font-smaller">Login</a>
+			<a href="http://westmusic.com/service" class="top-hyp font-smaller">Customer service</a>
+			<a href="http://westmusic.com/profile/login" class="top-hyp font-smaller">Login</a>
 		</div>
 		<div class="top-dropdown login">
     		<div class="opener collapsed">
         		<span class="login-title">Account</span>
     		</div>
     		<div class="summary">
-        		<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2fall-products%2f" class="hyp">Login</a>
-				<a href="/profile/wishlist" class="hyp" rel="nofollow">Wish list</a>
+        		<a href="http://westmusic.com/profile/login" class="hyp">Login</a>
+				<a href="http://westmusic.com/profile/wishlist" class="hyp" rel="nofollow">Wish list</a>
     		</div>
 		</div>
     </div>
     <div class="middle-header">
     	<div class="logo">
-        	<a href="/">
+        	<a href="http://westmusic.com">
             	<img src="/wp-content/uploads/2018/04/logo_wm.png" alt="Logo image">
         	</a>
     	</div>               
