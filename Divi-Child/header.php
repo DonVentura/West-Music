@@ -33,7 +33,84 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div id="page-container">
+	<div id="page-container" class="header-flex-responsive">
+	<div id="mobile-bar">
+		<div class="mobile-nav-toggle">
+			<span id="open-menu-btn" onclick="openMenu()" class="nav-opener">
+				<img src="/wp-content/themes/Divi-Child/images/nav-open.png">
+			</span>
+			<span id="close-menu-btn" onclick="closeMenu()" class="nav-closer">
+				<img src="/wp-content/themes/Divi-Child/images/nav-close.png">
+			</span>
+		</div>
+		<div class="mobile-nav-middle">
+			<div class="logo">
+				<a href="/">
+					<img src="/wp-content/uploads/2018/04/logo_wm.png" alt="Logo image">
+				</a>
+			</div>                 
+			<div class="search">
+				<div class="search-wrapper ui-front" id="middle-header-search">
+					<div id="search-2" class="et_pb_widget widget_search" style="width:100%;">
+						<form role="search" method="get" id="searchform" class="searchform" action="http://westmusic.signamarketing.net/">
+							<div>
+								<label class="screen-reader-text" for="s">Search for:</label>
+								<input type="text" placeholder="Search Blog Posts..." name="s" id="s">
+								<input type="submit" id="searchsubmit" value="search">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-dropdown login">
+    		<div class="opener collapsed">
+        		<span class="login-title">Account</span>
+    		</div>
+    		<div class="summary">
+        		<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2fall-products%2f" class="hyp">Login</a>
+				<a href="/profile/wishlist" class="hyp" rel="nofollow">Wish list</a>
+    		</div>
+		</div>
+	</div>
+
+</div>
+    <div class="top-header">
+		<div class="top-info phone-icon font-smaller" style="color:#939598">Questions? Call us 1-800-397-9378</div>
+        <div class="top-action">
+			<a href="/service" class="top-hyp font-smaller">Customer service</a>
+			<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2f" class="top-hyp font-smaller">Login</a>
+		</div>
+		<div class="top-dropdown login">
+    		<div class="opener collapsed">
+        		<span class="login-title">Account</span>
+    		</div>
+    		<div class="summary">
+        		<a href="/profile/login?returnurl=https%3a%2f%2fdev.westmusic.com%2fall-products%2f" class="hyp">Login</a>
+				<a href="/profile/wishlist" class="hyp" rel="nofollow">Wish list</a>
+    		</div>
+		</div>
+    </div>
+    <div class="middle-header">
+    	<div class="logo">
+        	<a href="/">
+            	<img src="/wp-content/uploads/2018/04/logo_wm.png" alt="Logo image">
+        	</a>
+    	</div>               
+        <div class="search">
+        	<div class="search-wrapper ui-front" id="middle-header-search">
+                <div id="search-2" class="et_pb_widget widget_search" style="width:100%;">
+                    <form role="search" method="get" id="searchform" class="searchform" action="http://westmusic.signamarketing.net/">
+				    	<div>
+					    	<label class="screen-reader-text" for="s">Search for:</label>
+					    	<input type="text" placeholder="Search Blog Posts..." name="s" id="s">
+					    	<input type="submit" id="searchsubmit" value="search">
+				    	</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
 <?php
 	if ( is_page_template( 'page-template-blank.php' ) ) {
 		return;
@@ -200,7 +277,7 @@
 			</div>
 		</div>
 	<?php endif; // true ==== $et_slide_header ?>
-
+	<div class="bottom-header">
 		<header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
 			<div class="container clearfix et_menu_container">
 			<?php
@@ -214,6 +291,7 @@
 						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
 					</a>
 				</div>
+
 				<div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
 					<?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
 						<nav id="top-menu-nav">
@@ -262,6 +340,7 @@
 
 					<?php do_action( 'et_header_top' ); ?>
 				</div> <!-- #et-top-navigation -->
+
 			</div> <!-- .container -->
 			<div class="et_search_outer">
 				<div class="container et_search_form_container">
@@ -278,7 +357,7 @@
 				</div>
 			</div>
 		</header> <!-- #main-header -->
-
+					</div>
 
 
 

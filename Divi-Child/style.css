@@ -79,10 +79,16 @@ width:100%; padding-top:0px !important;
 #footer-widgets .et_pb_widget.widget_categories li a:hover {
     text-decoration: underline !important;
 }
-#footer-widgets .footer-widget li {
+/* #footer-widgets .footer-widget li {
     position: relative;
     padding-left: 0px;
-}
+    width: 150px;
+    line-height: 18px;
+    padding-bottom: 3px;
+    font-family: 'Open Sans';
+    margin-bottom: 0px;
+} */
+#footer-widgets .footer-widget.last li{padding-left:0px;}
 #footer-widgets .footer-widget li:before {content:none;}
 #social-media li {
     display: inline-block;
@@ -245,3 +251,238 @@ width:100%; padding-top:0px !important;
 .mobile_menu_bar:before {
     color: #fff;
 }
+.nav li ul {
+    border-color:#fff !important;
+}
+
+.sitemap-nav li ul li {
+    margin: 0px !important;
+}
+.sitemap-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footer-widgets .sitemap-nav li {
+    width: 150px;
+    line-height: 18px;
+    padding-bottom: 3px;
+    float: left;
+    padding-right: 13px;
+    font-family: 'Open Sans';
+    padding-left: 0px;
+}
+.sitemap .font-h4 {
+    display: none;
+}
+.newsletter-line {
+    display: table;
+    margin-top: 12px;
+    width: 100%;
+}
+.newsletter-line li {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.tbx, .tar, .uploader {
+    background: #f2f2f2;
+    border-color: #c2c2c2;
+}
+.tbx-email-newsletter {
+    margin-right: 5px;
+}
+.tbx, .tar {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-radius: 3px;
+    position: relative;
+}
+
+.tbx input {
+    height: 34px;
+}
+.tbx input, .tar textarea {
+    display: block;
+    border: 0 none;
+    background: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    padding: 0 14px;
+}
+#custom_html-3 .btn {
+    background-color: #D0112B;
+    border-color: #939598;
+    font-family: 'Pathway Gothic One',sans-serif;
+    color: #fff;
+    font-size: 1.4em;
+}
+#custom_html-3 .btn {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    box-sizing: border-box;
+    height: 35px;
+    line-height: 34px;
+    padding: 0 40px 0 14px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: rgba(0,0,0,.3) 0 1px 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: normal;
+    border-radius: 2px;
+}
+#custom_html-3 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+  #custom_html-3 input::-moz-placeholder { /* Firefox 19+ */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+  #custom_html-3 input:-ms-input-placeholder { /* IE 10+ */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+  #custom_html-3 input:-moz-placeholder { /* Firefox 18- */
+    color:#bfbfbf;
+    font-style:italic;
+  }
+
+.top-dropdown.login{display: none;}
+#mobile-bar{display: none;}
+/* Setting the breakpoint of the mobile menu */
+@media only screen and ( max-width: 1024px ) {
+    #top-menu-nav, #top-menu {display: none;}
+    #et_top_search {display: none;}
+    #et_mobile_nav_menu {display: block;}
+    .et_fixed_nav #main-header, .et_fixed_nav #top-header{
+        position: absolute;
+        }
+    }
+
+@media (max-width: 1024px){
+  .et_header_style_left #logo, .et_header_style_split #logo {
+    display:none;
+  }
+  header#main-header {
+    background-color: #fff;
+}
+#main-header .container.clearfix.et_menu_container {
+    margin: 0px;
+    width: 100%;
+}
+
+
+.top-header,.middle-header{display: none;}
+#mobile-bar {display:flex; height:60px;border-bottom: 1px solid #e6e6e6;}
+.mobile-nav-toggle{border-right:1px  solid #e6e6e6;}
+.mobile-nav-toggle img {padding:21px;}
+img.nav-closer {
+    display: none;
+}
+.mobile-nav-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    -ms-flex-order: 2;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+#mobile-bar .logo img{height:32px;}
+#mobile-bar .search {width: 55%;}
+.top-dropdown.login {
+    /* display: none; */
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+}
+.top-dropdown.login .opener {
+    min-width: 51px;
+    padding: 21px;
+    height: auto;
+}
+.top-dropdown.login .opener:before {
+    background: url(/wp-content/themes/Divi-Child/images/login-red.png);
+    content: '';
+    display: inline-block;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    right: 27px;
+    margin: auto;
+    height: 18px;
+    width: 16px;
+    /* vertical-align: middle; */
+}
+.top-dropdown.login .opener:after {
+    content: '';
+    /* position: absolute; */
+    top: 0;
+    /* bottom: 0; */
+    display: inline-block;
+    right: 13px;
+    margin: auto;
+    height: 12px;
+    width: 11px;
+    background: url(/wp-content/themes/Divi-Child/images/arrow-down-grey.png);
+    background-repeat: no-repeat;
+}
+.top-dropdown.login .summary {display: none;}
+span.login-title {
+    display: none;
+}
+.et_header_style_split .mobile_menu_bar, .et_header_style_left .mobile_menu_bar {
+    padding-bottom: 24px;
+    display: none;
+}
+
+
+ul#mobile_menu.et_mobile_menu.open {display: block !important;}
+.nav-opener{display:block; cursor:pointer;}
+.nav-closer{display:none; cursor:pointer}
+.nav-opener.open{display:none;}
+.nav-closer.open{display:block;}
+.et_mobile_menu {background-color:#D0112B;}
+.et_mobile_menu li a {
+    color: #fff !important;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 5px;
+    background: url();
+    background: url(/wp-content/themes/Divi-Child/images/arrow-group-expand.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: 5px;
+}
+.et_mobile_menu li:hover {background-color:#fff !important; opacity:1;}
+.et_mobile_menu li:hover a {color: #333 !important; text-decoration: underline; opacity:1;}
+
+
+}
+@media (max-width: 639px) {
+    #mobile-bar .search {
+        display: none;
+    }
+}
+@media (max-width: 479px){
+    .et_pb_post h2, .et_pb_blog_grid h2 {
+        padding-bottom: 6px;
+        font-size: 27px;
+    }}
